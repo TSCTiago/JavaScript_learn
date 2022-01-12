@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Verificando a nacionalidade</h1>
+    PAÍS ATUAL: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="verificar" onclick="verif()">
+    <div id="res">
+    </div>
+    <script>
+        function verif(){
+            var nac = document.getElementById('texnac')
+            var res = document.querySelector('div#res')
+            if(nac == "Brasil"){
+                res.innerHTML = `<p>Você é Brasileiro</p>`
+            }else{
+                res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
